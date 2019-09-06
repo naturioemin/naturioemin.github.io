@@ -1,0 +1,226 @@
+$maincolor:#679509 ; //yasil
+$maincolor2:#333333; //qara
+$maincolor3:#8b8b8b; //boz
+.maincolor{color: $maincolor}
+.maincolor2{color: $maincolor2}
+.maincolor3{color: $maincolor3}
+
+.toppadding{
+  padding-left: 100px;
+}
+.toppaddingimg{
+  padding:10px 10px 10px 87px;
+}
+
+.header-color{
+   background-color: $maincolor;
+}
+.font-family1{
+  font-family:PT Sans, sans-serif;
+
+}
+.font-family2{
+  font-family:'Pacifico', cursive;
+
+}
+.head-h1{
+   
+    font-weight: 900;
+     font-size: 82px;
+      // line-height: 98px;
+       
+       }
+
+
+// menu-responsive
+
+
+@media screen and (max-width: 1200px){
+    
+    header{
+
+      .container-fluid{
+        display: none;
+      
+    }
+     .menu{
+                display: block!important;
+               
+            }
+      }}
+@media screen and (min-width: 1200px){
+           
+header{
+              .menu{
+        display: none;
+      
+    }
+     .container-fluid{
+                display: block!important;
+               
+            }
+}
+    }
+
+
+header{
+  .menu{
+    i{
+      font-size: 30px;
+      padding: 20px
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 720px){
+  .head-h1-padding{
+  padding: 30px 0px 40px 66px;
+}
+
+}
+@media screen and (min-width: 720px){
+  .head-h1-padding{
+  padding: 130px 0px 140px 66px;
+}
+
+}
+
+
+
+
+
+@media (max-width: 576px) {
+.head-h1{
+   
+     font-size: 42px;
+ 
+} 
+.head-h2{
+   
+   font-size: 22px; 
+
+}
+ }
+// .head-h1-padding{
+//   padding: 230px 0px 240px 66px;
+// }
+.bg1{
+      background-position: center center;
+  background-size:cover;
+  width: 100%;
+  height: auto;
+  background-image:url('imgs/bg1.jpg');
+}
+
+.head-h2{
+   
+    font-weight: 400; font-size: 32px; 
+    line-height: 40px; 
+}
+
+.head-button{ color: $maincolor;
+
+}
+
+.custom-button{
+  background-color:$maincolor;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-family:PT Sans, sans-serif;
+  font-size:100%;
+  padding: 20px 40px;
+   font-weight: 900;
+   text-decoration: none;
+   border:none;
+  
+
+}
+
+
+
+
+
+
+
+// main header head yuxaridadi
+
+
+//importdar
+@import "form";
+@import "OurProducts";
+@import "shopnow";
+@import "urey";
+@import "blog";
+@import "slider";
+
+
+
+// sliderden sora
+
+@media (max-width: 576px) {
+
+#form3{width: 250px;
+
+}
+
+ 
+} 
+@media (min-width: 576px) {
+
+#form3{width: 400px;
+
+}
+ 
+} 
+
+
+
+//footer
+
+footer{
+    @media (min-width: 720px) {
+
+.df{
+  display: flex;
+  flex-direction: row;
+
+}}
+  @media (max-width: 720px) {
+
+.df{
+  display: flex;
+  flex-direction: column;
+
+}}
+
+
+  .container-fluid{
+     height: auto;
+     background-size:cover;
+     width: 100%;
+
+      background-position: center center;
+
+       background-image:url(imgs/bg3.jpg); 
+  }
+ a, a:hover, a:active {
+
+    text-decoration: none;
+}
+a {
+  padding: 10px;
+  display:block;
+
+    color: #79787f;
+    font-size: 15px;}
+    a:hover, a:active {
+      color: $maincolor3;}
+
+ 
+}
